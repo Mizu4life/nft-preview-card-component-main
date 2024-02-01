@@ -1,0 +1,80 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* defualt radius */
+.radius{
+    border-radius: 10px;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    position: relative;
+}
+/* adjusting the container to the center of the page, use flex to align contents inside */
+.container{
+    background-color: hsl(216, 50%, 16%);
+    width: 300px;
+    padding: 20px;
+    margin: 30px auto;
+    flex-flow: column wrap;
+    align-items: center;
+}
+/* Adjusting the main image */
+.image{
+    position: relative;
+}
+.image img{
+   max-width: 100%;
+}
+.view{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    padding: calc(150px - 24px);
+    opacity: 0;
+}
+.image:hover .view{
+    opacity: 1;
+}
+h3, p span{
+    color: hsl(0, 0%, 100%);
+}
+
+.cyan, h3:hover, p span:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.cash{
+    justify-content: space-between;
+}
+.cash span{
+    padding-left: 5px;
+}
+hr{
+    border-color: hsl(215, 32%, 27%);
+}
+.user{
+    align-items:center;
+}
+.user img{
+    width: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.user p{
+    margin: auto;
+}
+
+
+.attribution a{
+    color: hsl(178, 100%, 50%);
+    text-decoration: none;
+}
+.attribution a:hover{
+    text-decoration: underline;
+}
